@@ -1,0 +1,142 @@
+\documentclass{book}
+\begin{document}
+	This book is a intro and some samples of Rust.
+	\chapter{Introduction}
+	\section{What is Rust or Rustlang?}
+	Is a multi paradigms cross platform programming language.
+	\section{Why Rust?}
+	\begin{itemize}
+		\item paradimes: concurrent, functional, generic, impreative, structured OOP but deferent c++
+		\item License 	MIT, Apache 2.0
+		\item  community bas	e and foundation
+		\item no have owner
+		\item cross platform (multi ISA: X86-64, ARM,...)
+		\item cross OS (multi Syscall: Linux, Windows, Bare Metal)
+\end{itemize}
+	\section{filename extensions}
+	\begin{itemize}
+			\item .rs 
+		\item .rlib
+	\end{itemize}
+\chapter{to-do}
+shellcodes
+cross-platform Remote Access Tools (RATs)
+Reusable and embeddable exploits
+scanners
+phishing toolkits
+embedded programming
+web servers
+...
+Attacks without a clear goal
+ Political attacks
+ DoS
+ DDoS
+  website defacements
+  pentest
+  red team
+  blue team
+  purple team
+  white/black/gray hat
+  bug bounty
+  cybercrime
+  forensic
+  NSA, shadow brokers, wanaCry, Petya
+  industrial spying
+  cyberwar
+  dematerialized/digitalized
+  cyberwar, https://www.goodreads.com/book/show/18465875-countdown-to-zero-day, “Countdown to Zero Day: Stuxnet and the Launch of the World’s First
+  Digital Weapon” by Kim Zetter
+  
+  phases of an attack
+  reconnaissance->exploitation->lateral movements->data exfiltration->clean up
+  										|				|
+reconn...-> info gathering,scanning...
+  										
+exploits (zero-day or not)
+abusing humans (social engineering)
+  			
+lateral...-> more access resource and systems...
+
+banking trojans, state spying...
+
+cleanup -> logs, memory, temp files, infrastructure, phishing webs,...
+
+profiles of attackers->hackerone, twitter
+
+the hacker-> hackerone  					
+
+exploit writer-> cve,exploitdb,github issue,bugtracker,...
+weaponizzation
+
+the developer
+
+credential dupers, proxies,...
+
+sys admin
+
+analyst
+
+hackernews https://news.ycombinator.com
+reddit https://www.reddit.com/r/programming
+
+run code live.rust-lang.com
+  						
+%https://en.wikipedia.org/wiki/Rust_(programming_language)
+
+%https://insights.stackoverflow.com/survey/2020#technology-most-loved-dreaded-and-wanted-languages  							
+
+regex
+extract all links from text and pdf
+
+python or rust -> crawling google trent rust
+
+rustc --explain E0004
+--verbose
+---------------------
+%pub enum Status {
+%	Queued,
+%	Running,
+%	Failed,
+%}
+%pub fn print_status(status: Status) {
+%	match status {
+%		Status::Queued => println!("queued"),
+%		Status::Running => println!("running"),
+%	}
+%}
+%$ cargo build
+%Compiling enums v0.1.0
+%error[E0004]: non-exhaustive patterns: `Failed` not covered
+%--> src/lib.rs:8:11
+%|
+%1 | / pub enum Status {
+%	2 | |
+%	Queued,
+%	3 | |
+%	Running,
+%	4 | |
+%	Failed,
+%	| |
+%	------ not covered
+%	5 | | }
+%| |_- `Status` defined here
+%...
+%8 |
+%match status {
+%	|
+%	^^^^^^ pattern `Failed` not covered
+%	|
+%	= help: ensure that all possible cases are being handled, possibly by adding
+%	↪
+%	wildcards or more match arms
+%	= note: the matched value is of type `Status`
+%	error: aborting due to previous error
+%	For more information about this error, try `rustc --explain E0004`.
+%	error: could not compile `enums`
+%	To learn more, run the command again with --verbose.
+%	
+modular, crates vs pip,npm,...
+explicit
+
+
+\end{document}
